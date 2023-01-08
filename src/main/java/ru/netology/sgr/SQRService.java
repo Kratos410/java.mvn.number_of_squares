@@ -1,13 +1,14 @@
 package ru.netology.sgr;
+
 public class SQRService {
     public int calcNumberOfSquareNumbers(int startOfRange, int endOfRange) {
-        int r=0;
-        for (int i = 10;i<=99; i++) {
-            if (startOfRange <= i * i && i * i <= endOfRange){
-                r=r+1;
+        int result = 0;
+        for (int number = 10; number <= 99; number++) {
+            if (startOfRange <= number * number && number * number <= endOfRange) {
+                result = result + 1;
             }
         }
-        return r;
+        return result;
     }
 
 }
